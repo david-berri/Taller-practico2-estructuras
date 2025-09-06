@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Random;
 
 public class Algoritmo {
 
@@ -14,6 +15,34 @@ public class Algoritmo {
             frecuencias.put(par, frecuencias.getOrDefault(par, 0) + 1);
         }
 
+        
+
         return frecuencias;
+    }
+
+    public  String fraseAleatoria(int tam){
+         
+        String resultado = "";
+       final int min = 65,  max = 90; // Código ASCII de 'A'
+        Random random = new Random();
+
+
+        
+
+        for(int indice = 0; indice < tam; indice++){
+
+    int codigoAsciiAleatorio = random.nextInt(max - min + 1) + min;
+        char letraAleatoria = (char) codigoAsciiAleatorio;
+
+        resultado +=  letraAleatoria;
+
+
+        
+
+
+
+        }
+        return resultado;
+
     }
 }

@@ -7,6 +7,17 @@ public class TestAlgoritmo {
         prueba3();
         prueba4();
         prueba5();
+
+        Algoritmo p1 = new Algoritmo();
+
+        String hola = p1.fraseAleatoria(10);
+        System.out.println(hola);
+         HashMap<String, Integer> p2 = Algoritmo.FrecuenciaPares(hola);
+         System.out.println(p2);
+        
+
+       
+
     }
 
     public static void prueba1() {
