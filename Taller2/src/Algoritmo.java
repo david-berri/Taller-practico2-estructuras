@@ -15,19 +15,14 @@ public class Algoritmo {
             frecuencias.put(par, frecuencias.getOrDefault(par, 0) + 1);
         }
 
-        
-
         return frecuencias;
     }
 
-    public  String fraseAleatoria(int tam){
+    public static String FraseAleatoria(int tam){
          
         String resultado = "";
        final int min = 65,  max = 90; // Código ASCII de 'A'
         Random random = new Random();
-
-
-        
 
         for(int indice = 0; indice < tam; indice++){
 
@@ -36,13 +31,10 @@ public class Algoritmo {
 
         resultado +=  letraAleatoria;
 
-
-        
-
-
-
         }
+
         return resultado;
 
     }
+
 }

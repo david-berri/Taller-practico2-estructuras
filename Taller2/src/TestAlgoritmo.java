@@ -2,6 +2,9 @@ import java.util.HashMap;
 
 public class TestAlgoritmo {
     public static void main(String[] args) {
+
+        System.out.println(Algoritmo.FrecuenciaPares("the flappy bird flappedits wings"));
+
         prueba1();
         prueba2();
         prueba3();
@@ -10,13 +13,10 @@ public class TestAlgoritmo {
 
         Algoritmo p1 = new Algoritmo();
 
-        String hola = p1.fraseAleatoria(10);
+        String hola = p1.FraseAleatoria(10);
         System.out.println(hola);
-         HashMap<String, Integer> p2 = Algoritmo.FrecuenciaPares(hola);
-         System.out.println(p2);
-        
-
-       
+        HashMap<String, Integer> p2 = Algoritmo.FrecuenciaPares(hola);
+        System.out.println(p2);   
 
     }
 
